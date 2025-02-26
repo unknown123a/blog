@@ -1,0 +1,62 @@
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: linear-gradient(45deg, #ff6f00, #ff4081, #7c4dff); /* Sunset to Purple Gradient */
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    animation: gradientShift 3s ease infinite, slideIn 2s ease-out;
+}
+
+/* Keyframe animation for gradient transition */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Keyframe animation for sliding text */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+a {
+    color: #ff4081;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+a:hover {
+    color: #7c4dff;
+    text-decoration:underline;
+}
+
+img{
+    width: 100%;
+
+}
+.c12{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #7c4dff;
+}
