@@ -35,7 +35,7 @@ DEBUG = True
 # ALLOWED_HOSTS = ['blog-production-5107.up.railway.app','https://blog-production-5107.up.railway.app']
 # CSRF_TRUSTED_ORIGINS = ['https://blog-production-5107.up.railway.app']
 
-ALLOWED_HOSTS = ['blog-production-5107.up.railway.app']
+ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['https://blog-production-5107.up.railway.app']
 
 # Application definition
@@ -74,8 +74,9 @@ EMAIL_USE_TLS =True
 PASSWORD_RESET_TIMEOUT =14400
 
 MIDDLEWARE = [
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
