@@ -32,9 +32,11 @@ SECRET_KEY = 'django-insecure-hawkv4rip-vprk9lerpki*@5ux*#3ds-i=7kyt#p7h&6#7tmi7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['blog-production-5107.up.railway.app','https://blog-production-5107.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['https://blog-production-5107.up.railway.app']
+# ALLOWED_HOSTS = ['blog-production-5107.up.railway.app','https://blog-production-5107.up.railway.app']
+# CSRF_TRUSTED_ORIGINS = ['https://blog-production-5107.up.railway.app']
 
+ALLOWED_HOSTS = ['blog-production-5107.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://blog-production-5107.up.railway.app']
 
 # Application definition
 
@@ -163,7 +165,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIR =[
+STATICFILES_DIRS =[
     BASE_DIR / 'static'
 ]
 STATIC_ROOT = BASE_DIR / 'staticfiles'
