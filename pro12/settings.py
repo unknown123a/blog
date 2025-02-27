@@ -35,7 +35,8 @@ DEBUG = True
 # ALLOWED_HOSTS = ['blog-production-5107.up.railway.app','https://blog-production-5107.up.railway.app']
 # CSRF_TRUSTED_ORIGINS = ['https://blog-production-5107.up.railway.app']
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["blog-production-5107.up.railway.app"]
+
 CSRF_TRUSTED_ORIGINS = ['https://blog-production-5107.up.railway.app']
 
 # Application definition
