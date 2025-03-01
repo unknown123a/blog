@@ -108,6 +108,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'pro12.wsgi.application'
 
+PORT = os.getenv("PORT", "8080")
+
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
