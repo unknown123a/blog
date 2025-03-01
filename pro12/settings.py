@@ -39,6 +39,9 @@ DEBUG = True
 # CSRF_TRUSTED_ORIGINS = ['https://blog-production-5107.up.railway.app']
 
 # ALLOWED_HOSTS = ["blog-production-5107.up.railway.app"]
+PORT = os.getenv("PORT", "8080")
+PORT = os.getenv("PORT", "8080")
+print(f"Using PORT: {PORT}")
 ALLOWED_HOSTS = ["this.up.railway.app", "127.0.0.1", "localhost"]
 
 CSRF_TRUSTED_ORIGINS = ['https://blog-production-5107.up.railway.app']
@@ -112,7 +115,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'pro12.wsgi.application'
 
-PORT = os.getenv("PORT", "8080")
 
 
 # Database
