@@ -133,6 +133,11 @@ DATABASES = {
 
     }
 }
+print(f"Database Name: {DATABASES['default']['NAME']}")
+print(f"Database User: {DATABASES['default']['USER']}") 
+print(f"Database Host: {DATABASES['default']['HOST']}")
+print(f"Database Port: {DATABASES['default']['PORT']}")
+print(f"Database Password: {DATABASES['default']['PASSWORD']}")
 # print(os.environ.get('DB_PASSWORD'))  # Debugging the DB_PASSWORD variable
 
 
