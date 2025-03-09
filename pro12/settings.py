@@ -42,7 +42,13 @@ DEBUG = True
 PORT = os.getenv("PORT", "8080")
 PORT = os.getenv("PORT", "8080")
 print(f"Using PORT: {PORT}")
-ALLOWED_HOSTS = ["this.up.railway.app", "127.0.0.1", "localhost"]
+# ALLOWED_HOSTS = ["this.up.railway.app", "127.0.0.1", "localhost"]
+ALLOWED_HOSTS = [
+    "this.up.railway.app",  # Your Railway domain
+    "127.0.0.1",  # Local testing
+    "localhost",  # Local testing
+    "healthcheck.railway.app"  # Fix Railway health check issue
+]
 
 CSRF_TRUSTED_ORIGINS = ['https://this.up.railway.app']
 
