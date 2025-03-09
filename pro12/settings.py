@@ -25,7 +25,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['blog-production-7060.up.railway.app','https://blog-production-7060.up.railway.app', "127.0.0.1", "localhost"]
 
 
-CSRF_TRUSTED_ORIGINS = ['blog-production-7060.up.railway.app','https://blog-production-7060.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://blog-production-7060.up.railway.app']
 
 
 INSTALLED_APPS = [
