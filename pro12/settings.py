@@ -212,24 +212,24 @@ RECAPTCHA_PRIVATE_KEY = '6LdZLuEqAAAAAJcVcBxWfy8aEfy5Dq4-2xqRXFEf'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-import logging
+# import logging
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': 'django_email.log',  # Logs will be stored here
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['file'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-    },
-}
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'file': {
+#             'level': 'DEBUG',
+#             'class': 'logging.FileHandler',
+#             'filename': 'django_email.log',  # Logs will be stored here
+#         },
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['file'],
+#             'level': 'DEBUG',
+#             'propagate': True,
+#         },
+#     },
+# }
 
