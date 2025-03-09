@@ -22,8 +22,8 @@ SECRET_KEY = 'django-insecure-hawkv4rip-vprk9lerpki*@5ux*#3ds-i=7kyt#p7h&6#7tmi7
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['blog-production-7060.up.railway.app','https://blog-production-7060.up.railway.app', "127.0.0.1", "localhost"]
-
+# ALLOWED_HOSTS = ['blog-production-7060.up.railway.app','https://blog-production-7060.up.railway.app', "127.0.0.1", "localhost"]
+ALLOWED_HOST =['*']
 
 CSRF_TRUSTED_ORIGINS = ['https://blog-production-7060.up.railway.app']
 
