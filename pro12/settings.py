@@ -44,7 +44,6 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "*"
 ]
-
 CSRF_TRUSTED_ORIGINS = [
     "https://blog-production-cf17.up.railway.app",
     "https://*.railway.app"
@@ -52,7 +51,7 @@ CSRF_TRUSTED_ORIGINS = [
 
 
 
-CSRF_TRUSTED_ORIGINS = ['https://blog-production-7060.up.railway.app']
+# CSRF_TRUSTED_ORIGINS = ['https://blog-production-7060.up.railway.app']
 
 
 INSTALLED_APPS = [
