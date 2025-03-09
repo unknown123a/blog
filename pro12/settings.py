@@ -44,7 +44,7 @@ PORT = os.getenv("PORT", "8080")
 print(f"Using PORT: {PORT}")
 ALLOWED_HOSTS = ["this.up.railway.app", "127.0.0.1", "localhost"]
 
-CSRF_TRUSTED_ORIGINS = ['https://blog-production-5107.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://this.up.railway.app']
 
 # Application definition
 
@@ -178,16 +178,15 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
-
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS =[
-    BASE_DIR / 'app1'/'static'
+STATICFILES_DIRS = [
+    BASE_DIR / 'app1' / 'static'  # Your app's static files
 ]
-STATIC_ROOT = BASE_DIR / 'app1'/'staticfiles'
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # Store collected static files centrally
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 
 # MEDIA_URL ='media/'
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'app1', 'media')
