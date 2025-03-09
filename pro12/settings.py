@@ -32,6 +32,10 @@ ALLOWED_HOSTS = [
     "*"
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://blog-production-7060.up.railway.app"
+]
+
 
 CSRF_TRUSTED_ORIGINS = ['https://blog-production-7060.up.railway.app']
 
