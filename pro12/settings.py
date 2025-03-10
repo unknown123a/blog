@@ -37,18 +37,28 @@ DEBUG = True
 # ]
 import os
 
+# ALLOWED_HOSTS = [
+#     os.getenv("RAILWAY_PUBLIC_DOMAIN", "blog-production-cf17.up.railway.app"),
+#     ".railway.app",
+#     "localhost",
+#     "127.0.0.1",
+#     "*"
+# ]
+# CSRF_TRUSTED_ORIGINS = [
+#     "https://blog-production-cf17.up.railway.app",
+#     "https://*.railway.app"
+# ]
+
+
 ALLOWED_HOSTS = [
     os.getenv("RAILWAY_PUBLIC_DOMAIN", "blog-production-cf17.up.railway.app"),
-    ".railway.app",
     "localhost",
-    "127.0.0.1",
-    "*"
-]
-CSRF_TRUSTED_ORIGINS = [
-    "https://blog-production-cf17.up.railway.app",
-    "https://*.railway.app"
+    "127.0.0.1"
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://blog-production-cf17.up.railway.app"
+]
 
 
 # CSRF_TRUSTED_ORIGINS = ['https://blog-production-7060.up.railway.app']
