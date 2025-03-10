@@ -134,6 +134,18 @@ WSGI_APPLICATION = 'pro12.wsgi.application'
 
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME' : 'railway',#database name
+#         'USER':'postgres', #username 
+#         'PASSWORD':os.environ['DB_PASSWORD'],
+
+#         'HOST':'metro.proxy.rlwy.net',
+#         'PORT':'58564',
+
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -141,11 +153,12 @@ DATABASES = {
         'USER':'postgres', #username 
         'PASSWORD':os.environ['DB_PASSWORD'],
 
-        'HOST':'metro.proxy.rlwy.net',
-        'PORT':'58564',
+        'HOST':'postgres.railway.internal',
+        'PORT':'5432',
 
     }
 }
+
 print(f"Database Name: {DATABASES['default']['NAME']}")
 print(f"Database User: {DATABASES['default']['USER']}") 
 print(f"Database Host: {DATABASES['default']['HOST']}")
